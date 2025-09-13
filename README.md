@@ -1,4 +1,4 @@
-# Kannada News Classifier (Vite + React)
+# Kannada News Classifier
 
 A minimal web UI that calls the Hugging Face Space `Santhosh737/Indic-Classify` with the `@gradio/client` API. Enter a Kannada headline, choose a model (DistilBERT, mBERT, XLM-R), and view the top predictions with confidence bars.
 

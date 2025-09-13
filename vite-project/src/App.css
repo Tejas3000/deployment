@@ -251,3 +251,58 @@ button.ghost {
     background-position: 0 0;
   }
 }
+
+/* Responsive tweaks */
+@media (max-width: 720px) {
+  #root {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  .container {
+    gap: 1rem;
+  }
+
+  .panel {
+    padding: .75rem;
+  }
+
+  /* Stack controls */
+  .row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .row.space {
+    gap: .5rem;
+  }
+
+  button.primary {
+    width: 100%;
+  }
+
+  /* Samples: allow sideways scroll if long */
+  .samples-list {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: .25rem;
+  }
+
+  .pill {
+    white-space: nowrap;
+    max-width: none;
+  }
+
+  /* Results card layout: put bar under the label */
+  .card .row.space {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .bar {
+    height: 8px;
+  }
+}

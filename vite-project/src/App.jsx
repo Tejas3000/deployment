@@ -14,6 +14,14 @@ function ConfidenceBar({ score, showLabel = false }) {
 
 const formatPct = (score) => (score * 100).toFixed(1)
 
+// Quick sample Kannada headlines for users to try
+const SAMPLES = [
+  'ಕೃಷಿ ಸುಧಾರಣೆಗಾಗಿ ಸರ್ಕಾರ ಹೊಸ ಯೋಜನೆ ಘೋಷಣೆ',
+  'ಐಪಿಎಲ್ ಪಂದ್ಯದಲ್ಲಿ ಬೆಂಗಳೂರು ತಂಡ ಭರ್ಜರಿ ಗೆಲುವು',
+  'ರಾಜ್ಯ ಬಜೆಟ್‌ನಲ್ಲಿ ಆರೋಗ್ಯಕ್ಕೆ ಹೆಚ್ಚಿನ ವಿನಿಯೋಗ',
+  'ಟೆಕ್ ಕಂಪನಿ ಕೃತಕ ಬುದ್ಧಿಮತ್ತೆ ಆಧಾರಿತ ಹೊಸ ಸಾಧನ ಬಿಡುಗಡೆ',
+]
+
 function App() {
   const [text, setText] = useState('')
   const [model, setModel] = useState(MODELS[0].value)
@@ -59,7 +67,7 @@ function App() {
   return (
     <div className="container">
       <header>
-        <h1>Kannada News Classifier</h1>
+        <h1>Indic-Classify: A Kannada News Classifier</h1>
         <p className="subtitle">Choose a model and enter a Kannada news headline to get the top 3 predicted categories.</p>
       </header>
 
@@ -76,6 +84,23 @@ function App() {
             }}
           />
         </label>
+
+        <div className="samples">
+          <span className="muted">Try a sample:</span>
+          <div className="samples-list">
+            {SAMPLES.map((s, i) => (
+              <button
+                key={i}
+                type="button"
+                className="pill"
+                onClick={() => setText(s)}
+                title="Use this headline"
+              >
+                {s}
+              </button>
+            ))}
+          </div>
+        </div>
 
         <div className="row">
           <label className="field">

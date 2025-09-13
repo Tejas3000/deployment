@@ -198,6 +198,34 @@ button.ghost {
   font-size: .85rem;
 }
 
+.samples {
+  display: grid;
+  gap: .5rem;
+}
+
+.samples-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.pill {
+  max-width: 100%;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background: #0d0f14;
+  border: 1px solid #2a3040;
+  color: var(--text);
+  border-radius: 999px;
+  padding: .35rem .6rem;
+}
+
+.pill:hover {
+  background: #151a26;
+}
+
 .error {
   color: var(--error);
   background: #3b1616;

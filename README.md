@@ -55,7 +55,7 @@ The project is deployed as a web application where users can:
 - Select a model (XLM-R, mBERT, DistilMBERT).  
 - View top 3 predicted categories with confidence scores.  
 
-👉 [Live Demo (Vercel Project)]([https://huggingface.co/spaces/Santhosh737/kannada-news-classifier](https://indic-classify.vercel.app/))
+👉 [Live Demo (Vercel Project)](https://indic-classify.vercel.app/)
 ---
 
 ## 🛠️ Tech Stack  

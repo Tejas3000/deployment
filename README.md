@@ -43,7 +43,7 @@ Indic-Classify is a deep learning project designed to automatically classify Kan
 ## 📈 Results  
 | Model        | Accuracy | F1-Score | Precision |  
 |--------------|----------|----------|-----------|  
-| XLM-R (Fine-tuned) | **85.89%** | **0.8549** | 0.8500 |  
+| XLM-R (Fine-tuned) | 85.89% | 0.8549 | 0.8500 |  
 | mBERT (Fine-tuned) | 83.32% | 0.8265 | 0.8288 |  
 | DistilMBERT (Fine-tuned) | 82.19% | 0.8154 | 0.8186 |  
 
@@ -61,7 +61,7 @@ The project is deployed as a web application where users can:
 ## 🛠️ Tech Stack  
 - **Languages**: Python  
 - **Libraries**: PyTorch, Hugging Face Transformers, IndicNLP  
-- **Deployment**: Gradio, Hugging Face Spaces, Docker (optional)  
+- **Deployment**: Gradio, Hugging Face Spaces, Vercel Project
 
 ---
 
@@ -69,7 +69,7 @@ The project is deployed as a web application where users can:
 
 ```plaintext
 Indic-Classify/
-│── data/ # Dataset (not included in repo)
+│── data/ # Dataset
 │── notebooks/ # Jupyter notebooks for experiments
 │── models/ # Fine-tuned models
 │── app/ # Gradio app for deployment
